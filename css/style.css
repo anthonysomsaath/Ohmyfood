@@ -326,6 +326,11 @@ header .title .back
     position: absolute;
     margin-right: 85%;
     font-size: 20px;
+    transition: all 200ms ease-in-out;
+}
+.back:hover
+{
+    transform: translateX(-5px)
 }
 /*section*/
 .menu
@@ -366,8 +371,7 @@ header .title .back
 {
     display: flex;
     flex-direction:column;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 50px;
 }
 .menu-courses h3
 {
@@ -400,6 +404,32 @@ header .title .back
     box-shadow: 0px 1px 10px rgb(209, 209, 209);
     background-color: white;
     border-radius: 15px;
+    opacity:0;
+    animation: appear 2s alternate;
+    animation-fill-mode: forwards;
+}
+.m1
+{
+    animation-delay: 0.25s;
+}
+.m2
+{
+    animation-delay: 0.5s;
+}
+.m3
+{
+    animation-delay: 1s;
+}
+.m4
+{
+    animation-delay: 1.5s;
+}
+@keyframes appear
+{
+    100% {
+        transform: translateY(-30px);
+        opacity: 1
+    } 
 }
 .starters-item h4, .starters-item p
 {
