@@ -146,7 +146,7 @@ header
     }
     .search-button:hover, .buy:hover, .restaurants-card:hover, .help .li:hover
     {
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
     .description p
     {
@@ -439,11 +439,30 @@ header .title .back
 {
     width: 90%;
     overflow: hidden;
+    padding: 10px 10px 10px 0px;
 }
 .price
 {
-    margin: 10px;
     font-weight: bolder;
+    display: flex;
+    align-items: center;
+    height: 73px;
+    gap: 10px;
+    overflow:hidden
+}
+.check
+{
+    background-color: #99E2D0;
+    padding: 27px;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right:-70px;
+    transition: all 2s ease-in-out;
+}
+.menu-card:hover ~ .check
+{
+    margin-right: 27px;
 }
 .order .buy
 {
