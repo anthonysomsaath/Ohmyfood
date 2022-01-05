@@ -225,6 +225,10 @@ header
     justify-content: space-around;
     gap: 15px;
 }
+.r1
+   {
+    margin-bottom: 20px;
+   }
 .restaurants-card
 {
     height: auto;
