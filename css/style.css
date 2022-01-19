@@ -437,7 +437,7 @@ font-size: 14px;
     animation: appear 2s alternate;
     animation-fill-mode: forwards;
     overflow: hidden;
-    cursor: pointer;
+    cursor: pointer; 
 }
 .menu-card:hover .check
 {
@@ -473,6 +473,9 @@ font-size: 14px;
 .starters-item h4, .starters-item p
 {
     margin: 5px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 .starters-item
 {
@@ -490,6 +493,7 @@ font-size: 14px;
     justify-content: flex-end;
     gap: 10px;
     transition: all 0.5s ease-in-out;
+    padding-left: 5px;
 }
 .check
 {
